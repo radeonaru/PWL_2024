@@ -85,3 +85,10 @@ Route::get('photos', [PhotoController::class]);
 // Route::get('photos', PhotoController::class)->except([
 //     'create','store','update','destroy'
 // ]);
+
+
+// Route::get('/greeting', function(){
+//     return view('blog.hello', ['name' => 'Indra']);
+// });
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
