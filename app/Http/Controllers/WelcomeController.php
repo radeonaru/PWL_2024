@@ -15,3 +15,4 @@ class WelcomeController extends Controller
             ->with('occupation','Programmer');
     }
 }
+
